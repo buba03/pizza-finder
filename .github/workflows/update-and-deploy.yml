@@ -1,0 +1,71 @@
+name: Update menu & deploy
+
+on:
+  schedule:
+    - cron: "17 8 * * *"   # every day, 09:17 Budapest time (winter) – before the 11:00 opening
+  workflow_dispatch:         # "Run workflow" button on the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit the refreshed data/pizzas.json
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Test parser
+        run: python -m unittest discover -s scraper/tests -v
+
+      - name: Fetch menu from randifutar.hu
+        id: scrape
+        continue-on-error: true   # if the site is down, still deploy the last good data
+        run: python scraper/scrape.py --report
+
+      - name: Commit updated menu
+        if: steps.scrape.outcome == 'success'
+        run: |
+          if git diff --quiet -- data/pizzas.json; then
+            echo "Menu unchanged."
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898208+github-actions[bot]@users.noreply.github.com"
+            git add data/pizzas.json
+            git commit -m "Update menu $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Prepare site
+        run: |
+          mkdir -p _site/data
+          cp index.html _site/
+          cp data/pizzas.json _site/data/
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Flag scrape failure
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::error::Fetching the menu failed - the site was deployed with the previous data. Check the 'Fetch menu' step log."
+          exit 1

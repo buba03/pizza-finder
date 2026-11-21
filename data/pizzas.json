@@ -1,0 +1,1688 @@
+{
+ "restaurant": "Randevú Étterem",
+ "orderUrl": "https://randifutar.hu/",
+ "updatedAt": "2026-11-21T17:43:36+00:00",
+ "pizzas": [
+  {
+   "id": "afrodite--a-honap-pizzaja",
+   "name": "Afrodité",
+   "number": null,
+   "subtitle": null,
+   "isNew": false,
+   "badge": "A hónap pizzája",
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "füstölt bacon",
+     "keys": [
+      "füstölt bacon",
+      "bacon"
+     ]
+    },
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "ananász",
+     "keys": [
+      "ananász"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Afrodité Pizza: Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt bacon, füstölt sonka, ananász csíkok, mozzarella",
+   "sizes": [
+    {
+     "cm": null,
+     "price": 3590,
+     "productId": 900001
+    }
+   ]
+  },
+  {
+   "id": "blody-mary--akcio",
+   "name": "Blody Mary",
+   "number": null,
+   "subtitle": null,
+   "isNew": false,
+   "badge": "Akció",
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "paradicsomos alap"
+   },
+   "toppings": [
+    {
+     "label": "pikáns szalámi",
+     "keys": [
+      "pikáns szalámi",
+      "szalámi"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi jellegű pizza tészta, paradicsomos alap, pikáns szalámi, mozzarella",
+   "sizes": [
+    {
+     "cm": null,
+     "price": 2990,
+     "productId": 900008
+    }
+   ]
+  },
+  {
+   "id": "fekete-ozvegy--akcio",
+   "name": "Fekete özvegy",
+   "number": null,
+   "subtitle": null,
+   "isNew": false,
+   "badge": "Akció",
+   "base": {
+    "label": "fokhagymás tejfölös",
+    "group": "tejfölös",
+    "raw": "fokhagymás tejfölös alap"
+   },
+   "toppings": [
+    {
+     "label": "sonka",
+     "keys": [
+      "sonka"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    },
+    {
+     "label": "fekete olívabogyó",
+     "keys": [
+      "fekete olívabogyó",
+      "olívabogyó"
+     ]
+    },
+    {
+     "label": "fekete majonéz",
+     "keys": [
+      "fekete majonéz"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi jellegű pizza tészta, fokhagymás tejfölös alap, sonka, lilahagyma, mozarrella, fekete olíva bogyó, fekete majonéz",
+   "sizes": [
+    {
+     "cm": null,
+     "price": 2990,
+     "productId": 900009
+    }
+   ]
+  },
+  {
+   "id": "loki",
+   "name": "Loki",
+   "number": 1,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "tejfölös",
+    "group": "tejfölös",
+    "raw": "tejfölös alap"
+   },
+   "toppings": [
+    {
+     "label": "pulled pork",
+     "keys": [
+      "pulled pork"
+     ]
+    },
+    {
+     "label": "tarja",
+     "keys": [
+      "tarja"
+     ]
+    },
+    {
+     "label": "kaliforniai paprika",
+     "keys": [
+      "kaliforniai paprika",
+      "paprika"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizza, tejfölös alap, pulled pork, tarja, kaliforniai paprika lilahagyma, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4290,
+     "productId": 900010
+    }
+   ]
+  },
+  {
+   "id": "horusz",
+   "name": "Hórusz",
+   "number": 2,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "tarja",
+     "keys": [
+      "tarja"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "chorizo",
+     "keys": [
+      "chorizo",
+      "kolbász"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "erős paprika",
+     "keys": [
+      "erős paprika",
+      "paprika"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, tarja, bacon, chorizo kolbász, lilahagyma, hegyes erőspaprika, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4090,
+     "productId": 900011
+    }
+   ]
+  },
+  {
+   "id": "odin",
+   "name": "Odin",
+   "number": 3,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "mustáros tejfölös",
+    "group": "tejfölös",
+    "raw": "tejfölös-mustáros alap"
+   },
+   "toppings": [
+    {
+     "label": "csirkemell",
+     "keys": [
+      "csirkemell"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "csemege uborka",
+     "keys": [
+      "csemege uborka",
+      "uborka"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, tejfölös-mustáros alap, grillezett csirkemell, bacon, lilahagyma, csemege uborka, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4220,
+     "productId": 900012
+    }
+   ]
+  },
+  {
+   "id": "amor",
+   "name": "Ámor",
+   "number": 4,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "gomba",
+     "keys": [
+      "gomba"
+     ]
+    },
+    {
+     "label": "kukorica",
+     "keys": [
+      "kukorica"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt sonka, gomba, édes kukorica, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4020,
+     "productId": 900013
+    },
+    {
+     "cm": 50,
+     "price": 9850,
+     "productId": 900041
+    }
+   ]
+  },
+  {
+   "id": "fortuna",
+   "name": "Fortuna",
+   "number": 5,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomos alap"
+   },
+   "toppings": [
+    {
+     "label": "gomba",
+     "keys": [
+      "gomba"
+     ]
+    },
+    {
+     "label": "kukorica",
+     "keys": [
+      "kukorica"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "kaliforniai paprika",
+     "keys": [
+      "kaliforniai paprika",
+      "paprika"
+     ]
+    },
+    {
+     "label": "brokkoli",
+     "keys": [
+      "brokkoli"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomos alap, gomba, kukorica, lilahagyma, kaliforniai paprika, brokkoli, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3890,
+     "productId": 900014
+    }
+   ]
+  },
+  {
+   "id": "hermesz",
+   "name": "Hermész",
+   "number": 6,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "tejfölös",
+    "group": "tejfölös",
+    "raw": "tejfölös alap"
+   },
+   "toppings": [
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "tojás",
+     "keys": [
+      "tojás"
+     ]
+    },
+    {
+     "label": "zöldpaprika",
+     "keys": [
+      "zöldpaprika",
+      "paprika"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, tejfölös alap, bacon, lilahagyma, tojás, zöldpaprika, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4120,
+     "productId": 900015
+    }
+   ]
+  },
+  {
+   "id": "demeter",
+   "name": "Démétér",
+   "number": 7,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "bab",
+     "keys": [
+      "bab"
+     ]
+    },
+    {
+     "label": "hagyma",
+     "keys": [
+      "hagyma"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "tarja",
+     "keys": [
+      "tarja"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, bab, hagyma, bacon, tarja, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4220,
+     "productId": 900016
+    }
+   ]
+  },
+  {
+   "id": "heliosz",
+   "name": "Héliosz",
+   "number": 8,
+   "subtitle": "Hamburger + Pizza Fúzió",
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "paradicsom mártás"
+   },
+   "toppings": [
+    {
+     "label": "marhahús",
+     "keys": [
+      "marhahús"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "hagyma",
+     "keys": [
+      "hagyma"
+     ]
+    },
+    {
+     "label": "cheddar sajtszósz",
+     "keys": [
+      "cheddar sajtszósz",
+      "cheddar",
+      "sajt"
+     ]
+    },
+    {
+     "label": "BBQ fűszersó",
+     "keys": [
+      "BBQ fűszersó"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "20dkg marhahús, bacon, hagyma, cheddar sajtszósz, paradicsom mártás, Kentucky BBQ fűszersó",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4430,
+     "productId": 900017
+    }
+   ]
+  },
+  {
+   "id": "poszeidon",
+   "name": "Poszeidón",
+   "number": 10,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "crudo sonka",
+     "keys": [
+      "crudo sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "nápolyi pizzatészta, olasz házi paradicsomszósz, crudo sonka, mozzarella.",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3320,
+     "productId": 900019
+    },
+    {
+     "cm": 50,
+     "price": 8100,
+     "productId": 900040
+    }
+   ]
+  },
+  {
+   "id": "hadesz",
+   "name": "Hádész",
+   "number": 11,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "pikáns szalámi",
+     "keys": [
+      "pikáns szalámi",
+      "szalámi"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "paradicsom",
+     "keys": [
+      "paradicsom"
+     ]
+    },
+    {
+     "label": "fokhagymás mártás",
+     "keys": [
+      "fokhagymás mártás"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, pikáns szalámi, bacon, paradicsom, fokhagymás mártás, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4020,
+     "productId": 900020
+    },
+    {
+     "cm": 50,
+     "price": 9850,
+     "productId": 900042
+    }
+   ]
+  },
+  {
+   "id": "lucifer",
+   "name": "Lucifer",
+   "number": 12,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "füstölt tarja",
+     "keys": [
+      "füstölt tarja",
+      "tarja"
+     ]
+    },
+    {
+     "label": "pikáns szalámi",
+     "keys": [
+      "pikáns szalámi",
+      "szalámi"
+     ]
+    },
+    {
+     "label": "jalapeno",
+     "keys": [
+      "jalapeno"
+     ]
+    },
+    {
+     "label": "kukorica",
+     "keys": [
+      "kukorica"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    },
+    {
+     "label": "chilis olívaolaj",
+     "keys": [
+      "chilis olívaolaj"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt tarja, pikáns szalámi, jalapeno, kukorica, lilahagyma, mozzarella, chilis olívaolaj",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4220,
+     "productId": 900021
+    },
+    {
+     "cm": 50,
+     "price": 10350,
+     "productId": 900043
+    }
+   ]
+  },
+  {
+   "id": "gabriel",
+   "name": "Gabriel",
+   "number": 13,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "fokhagymás-bazsalikomos tejfölös",
+    "group": "tejfölös",
+    "raw": "fokhagymás-bazsalikomos tejfölös mártás"
+   },
+   "toppings": [
+    {
+     "label": "csirkemell",
+     "keys": [
+      "csirkemell"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "kukorica",
+     "keys": [
+      "kukorica"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, fokhagymás-bazsalikomos tejfölös mártás, grillezett csirkemellfilé, lilahagyma, édes kukorica, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4020,
+     "productId": 900022
+    }
+   ]
+  },
+  {
+   "id": "apollo",
+   "name": "Apollo",
+   "number": 14,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "tejfölös",
+    "group": "tejfölös",
+    "raw": "tejfölös alap"
+   },
+   "toppings": [
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "kukorica",
+     "keys": [
+      "kukorica"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, tejfölös alap, füstölt sonka, kukorica, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3820,
+     "productId": 900023
+    },
+    {
+     "cm": 50,
+     "price": 9350,
+     "productId": 900044
+    }
+   ]
+  },
+  {
+   "id": "afrodite",
+   "name": "Afrodité",
+   "number": 15,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "füstölt bacon",
+     "keys": [
+      "füstölt bacon",
+      "bacon"
+     ]
+    },
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "ananász",
+     "keys": [
+      "ananász"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt bacon, füstölt sonka, ananász csíkok, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3890,
+     "productId": 900024
+    },
+    {
+     "cm": 50,
+     "price": 9525,
+     "productId": 900045
+    }
+   ]
+  },
+  {
+   "id": "hera",
+   "name": "Héra",
+   "number": 16,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "bolognai ragu",
+    "group": "bolognai ragu",
+    "raw": "házi bolognai ragu"
+   },
+   "toppings": [
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    },
+    {
+     "label": "parmezán",
+     "keys": [
+      "parmezán",
+      "sajt"
+     ]
+    },
+    {
+     "label": "bazsalikom",
+     "keys": [
+      "bazsalikom"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, házi bolognai ragu, mozzarella, parmezán, friss bazsalikom",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4220,
+     "productId": 900025
+    }
+   ]
+  },
+  {
+   "id": "artemisz",
+   "name": "Artemisz",
+   "number": 17,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "pulled pork",
+     "keys": [
+      "pulled pork"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "BBQ szósz",
+     "keys": [
+      "BBQ szósz"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, kemencében sült pulled-pork, lilahagyma, BBQ mártás, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4420,
+     "productId": 900026
+    }
+   ]
+  },
+  {
+   "id": "zeusz",
+   "name": "Zeusz",
+   "number": 18,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "chorizo",
+     "keys": [
+      "chorizo",
+      "kolbász"
+     ]
+    },
+    {
+     "label": "paradicsom",
+     "keys": [
+      "paradicsom"
+     ]
+    },
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "pirított gomba",
+     "keys": [
+      "pirított gomba",
+      "gomba"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, chorizo kolbász, paradicsomkarika, füstölt sonka, pirított gomba, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4220,
+     "productId": 900027
+    },
+    {
+     "cm": 50,
+     "price": 10350,
+     "productId": 900046
+    }
+   ]
+  },
+  {
+   "id": "cupido-a-la-randevu",
+   "name": "Cupido a'la Randevú",
+   "number": 19,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "csirkemell",
+     "keys": [
+      "csirkemell"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "füstölt sajt",
+     "keys": [
+      "füstölt sajt",
+      "sajt"
+     ]
+    },
+    {
+     "label": "dupla mozzarella",
+     "keys": [
+      "dupla mozzarella",
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt sonka, bacon, grillezett csirkemell, lilahagyma, füstölt sajt, dupla mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4520,
+     "productId": 900028
+    }
+   ]
+  },
+  {
+   "id": "athene",
+   "name": "Athéné",
+   "number": 20,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "feta",
+     "keys": [
+      "feta",
+      "sajt"
+     ]
+    },
+    {
+     "label": "füstölt gomolya",
+     "keys": [
+      "füstölt gomolya",
+      "gomolya",
+      "sajt"
+     ]
+    },
+    {
+     "label": "trappista",
+     "keys": [
+      "trappista",
+      "sajt"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    },
+    {
+     "label": "bazsalikom",
+     "keys": [
+      "bazsalikom"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, feta sajt, füstölt gomolya, trappista sajt, mozzarella, friss bazsalikom",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3820,
+     "productId": 900029
+    }
+   ]
+  },
+  {
+   "id": "pandora",
+   "name": "Pandora",
+   "number": 21,
+   "subtitle": null,
+   "isNew": false,
+   "badge": null,
+   "base": {
+    "label": "fokhagymás paradicsomos",
+    "group": "paradicsomos",
+    "raw": "fokhagymás olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "tonhal",
+     "keys": [
+      "tonhal"
+     ]
+    },
+    {
+     "label": "olívabogyó",
+     "keys": [
+      "olívabogyó"
+     ]
+    },
+    {
+     "label": "vöröshagyma",
+     "keys": [
+      "vöröshagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, fokhagymás olasz házi paradicsomszósz, tonhal, olívabogyó, vöröshagyma, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4320,
+     "productId": 900030
+    }
+   ]
+  },
+  {
+   "id": "ozirisz",
+   "name": "Ozirisz",
+   "number": 22,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "fokhagymás paradicsomos",
+    "group": "paradicsomos",
+    "raw": "fokhagymás olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "szalámi",
+     "keys": [
+      "szalámi"
+     ]
+    },
+    {
+     "label": "gomba",
+     "keys": [
+      "gomba"
+     ]
+    },
+    {
+     "label": "erős pepperóni",
+     "keys": [
+      "erős pepperóni",
+      "pepperóni"
+     ]
+    },
+    {
+     "label": "füstölt sajt",
+     "keys": [
+      "füstölt sajt",
+      "sajt"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, fokhagymás olasz házi paradicsomszósz, füstölt sonka, szalámi, gomba, erős pepperóni, füstölt sajt",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3690,
+     "productId": 900031
+    }
+   ]
+  },
+  {
+   "id": "siva",
+   "name": "Síva",
+   "number": 23,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "sajtkrémes",
+    "group": "sajtkrémes",
+    "raw": "sajtkrémes szósz"
+   },
+   "toppings": [
+    {
+     "label": "csirkemell",
+     "keys": [
+      "csirkemell"
+     ]
+    },
+    {
+     "label": "füstölt sonka",
+     "keys": [
+      "füstölt sonka",
+      "sonka"
+     ]
+    },
+    {
+     "label": "paradicsom",
+     "keys": [
+      "paradicsom"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, sajtkrémes szósz, grillezett csirkemell, füstölt sonka, szeletelt paradicsom, mozzarella sajt",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3790,
+     "productId": 900032
+    }
+   ]
+  },
+  {
+   "id": "marduk",
+   "name": "Marduk",
+   "number": 24,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "csípős paradicsomos",
+    "group": "paradicsomos",
+    "raw": "csípős házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "pikáns szalámi",
+     "keys": [
+      "pikáns szalámi",
+      "szalámi"
+     ]
+    },
+    {
+     "label": "darált hús",
+     "keys": [
+      "darált hús",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, csípős házi paradicsomszósz, pikáns szalámi, darált hagymás sertéshús, mozzarella,",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3890,
+     "productId": 900033
+    }
+   ]
+  },
+  {
+   "id": "mimir",
+   "name": "Mimir",
+   "number": 25,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "tejfölös",
+    "group": "tejfölös",
+    "raw": "tejfölös alap"
+   },
+   "toppings": [
+    {
+     "label": "füstölt szalonna",
+     "keys": [
+      "füstölt szalonna",
+      "szalonna",
+      "bacon"
+     ]
+    },
+    {
+     "label": "kolbász",
+     "keys": [
+      "kolbász"
+     ]
+    },
+    {
+     "label": "lilahagyma",
+     "keys": [
+      "lilahagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "csípős paprika (választható)",
+     "keys": [
+      "csípős paprika (választható)",
+      "erős paprika",
+      "paprika"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, tejfölös alap, pirított füstölt szalonna, kolbász, lilahagyma, választható csípős paprika, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3790,
+     "productId": 900034
+    }
+   ]
+  },
+  {
+   "id": "thor",
+   "name": "Thor",
+   "number": 26,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "darált hús",
+     "keys": [
+      "darált hús"
+     ]
+    },
+    {
+     "label": "csülök",
+     "keys": [
+      "csülök"
+     ]
+    },
+    {
+     "label": "vöröshagyma",
+     "keys": [
+      "vöröshagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, darált hús, csülök, vöröshagyma, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4520,
+     "productId": 900035
+    }
+   ]
+  },
+  {
+   "id": "frigg",
+   "name": "Frigg",
+   "number": 28,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "sajtkrémes",
+    "group": "sajtkrémes",
+    "raw": "sajtkrémes szósz"
+   },
+   "toppings": [
+    {
+     "label": "sonka",
+     "keys": [
+      "sonka"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "tükörtojás",
+     "keys": [
+      "tükörtojás",
+      "tojás"
+     ]
+    },
+    {
+     "label": "pepperóni",
+     "keys": [
+      "pepperóni"
+     ]
+    },
+    {
+     "label": "darált hús",
+     "keys": [
+      "darált hús"
+     ]
+    },
+    {
+     "label": "pick szalámi",
+     "keys": [
+      "pick szalámi",
+      "szalámi"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, sajtkrémes szósz, sonka, bacon, két tükörtojás, pepperoni, darált hús, Pick szalámi, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3990,
+     "productId": 900036
+    }
+   ]
+  },
+  {
+   "id": "mani",
+   "name": "Mani",
+   "number": 29,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "sajtkrémes",
+    "group": "sajtkrémes",
+    "raw": "sajtkrémes szósz"
+   },
+   "toppings": [
+    {
+     "label": "csirkemell",
+     "keys": [
+      "csirkemell"
+     ]
+    },
+    {
+     "label": "bacon",
+     "keys": [
+      "bacon"
+     ]
+    },
+    {
+     "label": "sült hagyma",
+     "keys": [
+      "sült hagyma",
+      "hagyma"
+     ]
+    },
+    {
+     "label": "jalapeno",
+     "keys": [
+      "jalapeno"
+     ]
+    },
+    {
+     "label": "mozzarella",
+     "keys": [
+      "mozzarella"
+     ]
+    }
+   ],
+   "spicy": true,
+   "description": "Nápolyi pizzatészta, sajtkrémes szósz, csirkemell, bacon, sült hagyma, jalapeno, mozzarella",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 3720,
+     "productId": 900037
+    }
+   ]
+  },
+  {
+   "id": "kali",
+   "name": "Kali",
+   "number": 30,
+   "subtitle": null,
+   "isNew": true,
+   "badge": null,
+   "base": {
+    "label": "paradicsomos",
+    "group": "paradicsomos",
+    "raw": "olasz házi paradicsomszósz"
+   },
+   "toppings": [
+    {
+     "label": "sonka",
+     "keys": [
+      "sonka"
+     ]
+    },
+    {
+     "label": "szalámi",
+     "keys": [
+      "szalámi"
+     ]
+    },
+    {
+     "label": "kukorica",
+     "keys": [
+      "kukorica"
+     ]
+    }
+   ],
+   "spicy": false,
+   "description": "Nápolyi pizzatészta, olasz házi paradicsomszósz, sonka, szalámi, kukorica",
+   "sizes": [
+    {
+     "cm": 32,
+     "price": 4020,
+     "productId": 900038
+    },
+    {
+     "cm": 50,
+     "price": 9850,
+     "productId": 900047
+    }
+   ]
+  }
+ ]
+}

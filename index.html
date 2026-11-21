@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pizzakereső – Randevú Étterem</title>
+<meta name="description" content="Keress pizzát feltétek alapján a Randevú Étterem (randifutar.hu) étlapján.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+<style>
+  :root {
+    --bg: #fbf7f2; --card: #fff; --ink: #2a211c; --muted: #7a6c62; --line: #eadfd4;
+    --brand: #c2410c; --brand-soft: #fff1e8; --yes: #15803d; --yes-soft: #e8f6ec;
+    --no: #b91c1c; --no-soft: #fdecec; --radius: 14px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #171310; --card: #221c18; --ink: #f3ebe4; --muted: #a8998d; --line: #3a302a;
+      --brand: #fb923c; --brand-soft: #3a2416; --yes: #4ade80; --yes-soft: #15301f; --no: #f87171; --no-soft: #3a1b1b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); }
+  header { padding: 20px 16px 8px; max-width: 1100px; margin: 0 auto; }
+  h1 { margin: 0; font-size: 1.6rem; letter-spacing: -.01em; }
+  h1 span { color: var(--brand); }
+  .sub { color: var(--muted); font-size: .9rem; margin-top: 2px; }
+  .sub a { color: var(--brand); }
+  main { max-width: 1100px; margin: 0 auto; padding: 8px 16px 48px; display: grid; gap: 20px; grid-template-columns: 1fr; }
+  @media (min-width: 900px) { main { grid-template-columns: 360px 1fr; align-items: start; }
+    aside { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; } }
+  aside, .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); }
+  aside { padding: 16px; }
+  .section + .section { margin-top: 16px; }
+  .label { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .hint { font-size: .82rem; color: var(--muted); margin: 0 0 8px; }
+  input[type=search] { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; background: var(--bg); color: var(--ink); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 5px 11px; font: inherit; font-size: .88rem; cursor: pointer; user-select: none; }
+  .chip small { color: var(--muted); margin-left: 3px; }
+  .chip.yes { background: var(--yes-soft); border-color: var(--yes); color: var(--yes); font-weight: 600; }
+  .chip.no { background: var(--no-soft); border-color: var(--no); color: var(--no); text-decoration: line-through; }
+  .chip.yes::before { content: "✓ "; } .chip.no::before { content: "✕ "; }
+  .seg { display: flex; flex-wrap: wrap; gap: 4px; }
+  .seg button { flex: 1 1 auto; border: 1px solid var(--line); background: var(--bg); color: var(--ink); padding: 7px 8px; border-radius: 9px; font: inherit; font-size: .88rem; cursor: pointer; }
+  .seg button[aria-pressed=true] { background: var(--brand); border-color: var(--brand); color: #fff; font-weight: 600; }
+  input[type=range] { width: 100%; accent-color: var(--brand); }
+  .linkbtn { background: none; border: 0; color: var(--brand); font: inherit; font-size: .82rem; cursor: pointer; padding: 0; text-transform: none; letter-spacing: 0; }
+  .summary { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .summary strong { font-size: 1.05rem; }
+  select { font: inherit; padding: 6px 8px; border-radius: 9px; border: 1px solid var(--line); background: var(--card); color: var(--ink); }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .card { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+  .card h3 { margin: 0; font-size: 1.1rem; display: flex; gap: 6px; align-items: baseline; flex-wrap: wrap; }
+  .num { color: var(--muted); font-weight: 500; font-size: .9rem; }
+  .badges { display: flex; gap: 4px; flex-wrap: wrap; }
+  .badge { font-size: .72rem; font-weight: 700; padding: 2px 7px; border-radius: 6px; background: var(--brand-soft); color: var(--brand); }
+  .badge.hot { background: var(--no-soft); color: var(--no); }
+  .base { font-size: .85rem; color: var(--muted); }
+  .tops { display: flex; flex-wrap: wrap; gap: 4px; }
+  .top { font-size: .82rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); }
+  .top.hit { background: var(--yes-soft); border-color: var(--yes); color: var(--yes); font-weight: 600; }
+  .top.miss { background: var(--no-soft); border-color: var(--no); color: var(--no); border-style: dashed; }
+  .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: end; gap: 8px; padding-top: 4px; }
+  .prices { display: flex; gap: 10px; flex-wrap: wrap; }
+  .price { font-weight: 700; } .price small { font-weight: 500; color: var(--muted); }
+  .order { color: var(--brand); font-weight: 600; text-decoration: none; font-size: .9rem; white-space: nowrap; }
+  .note { font-size: .82rem; color: var(--no); }
+  h2 { font-size: 1rem; margin: 28px 0 4px; }
+  .empty { padding: 28px; text-align: center; color: var(--muted); }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 0 16px 32px; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🍕 Pizza<span>kereső</span></h1>
+  <div class="sub" id="sub">Randevú Étterem · <a href="https://randifutar.hu/" target="_blank" rel="noopener">randifutar.hu</a></div>
+</header>
+
+<main>
+  <aside>
+    <div class="section">
+      <div class="label">Feltétek <button class="linkbtn" id="clearTops" hidden>törlés</button></div>
+      <p class="hint">Koppints egyszer: <b style="color:var(--yes)">legyen rajta</b>, még egyszer: <b style="color:var(--no)">ne legyen rajta</b>, harmadszor: mindegy.</p>
+      <input type="search" id="topSearch" placeholder="Feltét vagy pizza neve…" autocomplete="off">
+      <div class="chips" id="chips" style="margin-top:10px"></div>
+    </div>
+    <div class="section">
+      <div class="label">Alap</div>
+      <div class="seg" id="baseSeg"></div>
+    </div>
+    <div class="section">
+      <div class="label">Méret</div>
+      <div class="seg" id="sizeSeg"></div>
+    </div>
+    <div class="section">
+      <div class="label">Csípős</div>
+      <div class="seg" id="spicySeg"></div>
+    </div>
+    <div class="section">
+      <div class="label">Max. ár <span id="priceOut"></span></div>
+      <input type="range" id="price" step="100">
+    </div>
+    <div class="section"><button class="linkbtn" id="resetAll">Minden szűrő törlése</button></div>
+  </aside>
+
+  <section>
+    <div class="summary">
+      <strong id="count"></strong>
+      <label>Rendezés:
+        <select id="sort">
+          <option value="price">Ár szerint</option>
+          <option value="match">Legjobb egyezés</option>
+          <option value="number">Sorszám szerint</option>
+          <option value="name">Név szerint</option>
+        </select>
+      </label>
+    </div>
+    <div class="grid" id="results"></div>
+    <div id="nearWrap" hidden>
+      <h2>Majdnem jó – egy kért feltét hiányzik</h2>
+      <p class="hint">Extra feltét rendeléskor kérhető (+300 Ft / 32 cm, +600 Ft / 50 cm).</p>
+      <div class="grid" id="near"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Nem hivatalos oldal. Az adatok a <a href="https://randifutar.hu/" target="_blank" rel="noopener">randifutar.hu</a> étlapjáról származnak, naponta frissülnek; rendelés előtt ellenőrizd az árakat.
+  · <a href="https://github.com/buba03/pizza-finder" target="_blank" rel="noopener">GitHub</a>
+</footer>
+
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const fmt = (n) => n.toLocaleString("hu-HU").replace(/ /g, " ") + " Ft";
+  const collator = new Intl.Collator("hu");
+  const fold = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+
+  const BASES = [["", "Mindegy"], ["paradicsomos", "Paradicsomos"], ["tejfölös", "Tejfölös"], ["sajtkrémes", "Sajtkrémes"], ["other", "Egyéb"]];
+  const SIZES = [["", "Mindegy"], ["32", "32 cm"], ["50", "50 cm"]];
+  const SPICY = [["", "Mindegy"], ["yes", "🌶 Csípős"], ["no", "Ne legyen"]];
+
+  let DATA = null, maxPrice = 0, showAllChips = false;
+  const state = { yes: new Set(), no: new Set(), base: "", size: "", spicy: "", price: 0, sort: "price", q: "" };
+
+  // ---- URL hash <-> state, so a search can be bookmarked or shared ----
+  function readHash() {
+    const h = new URLSearchParams(location.hash.slice(1));
+    state.yes = new Set((h.get("van") || "").split("|").filter(Boolean));
+    state.no = new Set((h.get("nincs") || "").split("|").filter(Boolean));
+    state.base = h.get("alap") || ""; state.size = h.get("meret") || "";
+    state.spicy = h.get("csipos") || ""; state.sort = h.get("rend") || "price";
+    state.price = Number(h.get("max")) || 0;
+  }
+  function writeHash() {
+    const h = new URLSearchParams();
+    if (state.yes.size) h.set("van", [...state.yes].join("|"));
+    if (state.no.size) h.set("nincs", [...state.no].join("|"));
+    if (state.base) h.set("alap", state.base);
+    if (state.size) h.set("meret", state.size);
+    if (state.spicy) h.set("csipos", state.spicy);
+    if (state.price && state.price < maxPrice) h.set("max", state.price);
+    if (state.sort !== "price") h.set("rend", state.sort);
+    const s = h.toString();
+    history.replaceState(null, "", s ? "#" + s : location.pathname + location.search);
+  }
+
+  function keysOf(p) {
+    if (!p._keys) p._keys = new Set(p.toppings.flatMap((t) => t.keys));
+    return p._keys;
+  }
+  function sizesFor(p) {
+    return state.size ? p.sizes.filter((s) => String(s.cm) === state.size) : p.sizes;
+  }
+  function baseOk(p) {
+    if (!state.base) return true;
+    const g = p.base ? p.base.group : "";
+    return state.base === "other" ? !["paradicsomos", "tejfölös", "sajtkrémes"].includes(g) : g === state.base;
+  }
+
+  // Returns null if excluded, else {missing: [...]} listing wanted toppings it lacks.
+  function evaluate(p) {
+    const keys = keysOf(p);
+    for (const k of state.no) if (keys.has(k)) return null;
+    if (!baseOk(p)) return null;
+    if (state.spicy === "yes" && !p.spicy) return null;
+    if (state.spicy === "no" && p.spicy) return null;
+    const sz = sizesFor(p);
+    if (!sz.length) return null;
+    const cheapest = Math.min(...sz.map((s) => s.price));
+    if (state.price && cheapest > state.price) return null;
+    if (state.q) {
+      const q = fold(state.q);
+      const hay = fold(p.name + " " + p.toppings.map((t) => t.keys.join(" ")).join(" ") + " " + (p.base ? p.base.label : ""));
+      if (!hay.includes(q)) return null;
+    }
+    return { missing: [...state.yes].filter((k) => !keys.has(k)), cheapest };
+  }
+
+  function sortList(list) {
+    const by = {
+      price: (a, b) => a.r.cheapest - b.r.cheapest,
+      match: (a, b) => a.r.missing.length - b.r.missing.length || a.p.toppings.length - b.p.toppings.length || a.r.cheapest - b.r.cheapest,
+      number: (a, b) => (a.p.number ?? 999) - (b.p.number ?? 999),
+      name: (a, b) => collator.compare(a.p.name, b.p.name),
+    }[state.sort];
+    return list.sort((a, b) => by(a, b) || collator.compare(a.p.name, b.p.name));
+  }
+
+  // ---- rendering ----
+  function el(tag, attrs = {}, ...kids) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "class") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+      else if (v !== false && v != null) e.setAttribute(k, v);
+    }
+    for (const k of kids.flat()) if (k != null && k !== false) e.append(k);
+    return e;
+  }
+
+  function card(p, r) {
+    const wanted = state.yes;
+    const tops = p.toppings.map((t) => el("span", { class: "top" + (t.keys.some((k) => wanted.has(k)) ? " hit" : "") }, t.label));
+    const miss = r.missing.map((k) => el("span", { class: "top miss", title: "Nincs rajta" }, "+ " + k));
+    const badges = [
+      p.badge && el("span", { class: "badge" }, p.badge),
+      p.isNew && el("span", { class: "badge" }, "ÚJ"),
+      p.spicy && el("span", { class: "badge hot" }, "🌶 csípős"),
+    ];
+    const prices = sizesFor(p).map((s) => el("span", { class: "price" }, fmt(s.price), s.cm ? el("small", {}, " · " + s.cm + " cm") : null));
+    return el("article", { class: "card" },
+      el("h3", {}, p.number ? el("span", { class: "num" }, "#" + p.number) : null, p.name),
+      p.subtitle ? el("div", { class: "base" }, p.subtitle) : null,
+      el("div", { class: "badges" }, badges),
+      p.base ? el("div", { class: "base" }, "Alap: " + p.base.label) : null,
+      el("div", { class: "tops" }, tops, miss),
+      el("div", { class: "foot" }, el("div", { class: "prices" }, prices),
+        el("a", { class: "order", href: DATA.orderUrl, target: "_blank", rel: "noopener" }, "Rendelés →")));
+  }
+
+  function renderChips() {
+    const counts = new Map();
+    for (const p of DATA.pizzas) for (const k of keysOf(p)) counts.set(k, (counts.get(k) || 0) + 1);
+    const q = fold($("topSearch").value.trim());
+    const all = [...counts.keys()]
+      .filter((k) => !q || fold(k).includes(q) || state.yes.has(k) || state.no.has(k))
+      .sort((a, b) => counts.get(b) - counts.get(a) || collator.compare(a, b));
+    const LIMIT = 18;
+    const collapsed = !showAllChips && !q && all.length > LIMIT + 4;
+    const keys = collapsed ? all.filter((k, i) => i < LIMIT || state.yes.has(k) || state.no.has(k)) : all;
+    const toggle = all.length > LIMIT + 4 && !q
+      ? el("button", { class: "chip", type: "button", style: "border-style:dashed;color:var(--brand)", onclick: () => { showAllChips = !showAllChips; renderChips(); } },
+          collapsed ? `+ még ${all.length - keys.length} feltét` : "kevesebb")
+      : null;
+    $("chips").replaceChildren(...keys.map((k) => {
+      const cls = state.yes.has(k) ? "yes" : state.no.has(k) ? "no" : "";
+      return el("button", { class: "chip " + cls, type: "button", "aria-label": k + (cls === "yes" ? " – legyen rajta" : cls === "no" ? " – ne legyen rajta" : ""),
+        onclick: () => {
+          if (state.yes.has(k)) { state.yes.delete(k); state.no.add(k); }
+          else if (state.no.has(k)) state.no.delete(k);
+          else state.yes.add(k);
+          update();
+        } }, k, el("small", {}, counts.get(k)));
+    }), toggle || "");
+    $("clearTops").hidden = !(state.yes.size || state.no.size);
+  }
+
+  function renderSeg(id, opts, key) {
+    $(id).replaceChildren(...opts.map(([v, label]) =>
+      el("button", { type: "button", "aria-pressed": String(state[key] === v), onclick: () => { state[key] = v; update(); } }, label)));
+  }
+
+  function render() {
+    renderChips();
+    renderSeg("baseSeg", BASES, "base");
+    renderSeg("sizeSeg", SIZES, "size");
+    renderSeg("spicySeg", SPICY, "spicy");
+    $("price").value = state.price || maxPrice;
+    $("priceOut").textContent = state.price && state.price < maxPrice ? fmt(state.price) : "nincs";
+    $("sort").value = state.sort;
+
+    const all = DATA.pizzas.map((p) => ({ p, r: evaluate(p) })).filter((x) => x.r);
+    const exact = sortList(all.filter((x) => x.r.missing.length === 0));
+    const near = state.yes.size >= 1 ? sortList(all.filter((x) => x.r.missing.length === 1)) : [];
+
+    $("count").textContent = exact.length ? `${exact.length} pizza` : "Nincs pontos találat";
+    $("results").replaceChildren(...(exact.length ? exact.map((x) => card(x.p, x.r))
+      : [el("div", { class: "card empty" }, near.length ? "Nézd meg lent a majdnem jó pizzákat, vagy lazíts a szűrőkön." : "Próbálj kevesebb szűrőt.")]));
+    $("nearWrap").hidden = !near.length;
+    $("near").replaceChildren(...near.map((x) => card(x.p, x.r)));
+  }
+
+  function update() { writeHash(); render(); }
+
+  $("topSearch").addEventListener("input", (e) => { state.q = e.target.value.trim(); render(); });
+  $("price").addEventListener("input", (e) => { const v = Number(e.target.value); state.price = v >= maxPrice ? 0 : v; update(); });
+  $("sort").addEventListener("change", (e) => { state.sort = e.target.value; update(); });
+  $("clearTops").addEventListener("click", () => { state.yes.clear(); state.no.clear(); update(); });
+  $("resetAll").addEventListener("click", () => {
+    Object.assign(state, { yes: new Set(), no: new Set(), base: "", size: "", spicy: "", price: 0, q: "" });
+    $("topSearch").value = ""; update();
+  });
+  window.addEventListener("hashchange", () => { readHash(); render(); });
+
+  fetch("data/pizzas.json", { cache: "no-cache" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((d) => {
+      DATA = d;
+      maxPrice = Math.ceil(Math.max(...d.pizzas.flatMap((p) => p.sizes.map((s) => s.price))) / 100) * 100;
+      const minPrice = Math.floor(Math.min(...d.pizzas.flatMap((p) => p.sizes.map((s) => s.price))) / 100) * 100;
+      Object.assign($("price"), { min: minPrice, max: maxPrice });
+      const when = new Date(d.updatedAt).toLocaleDateString("hu-HU", { year: "numeric", month: "long", day: "numeric" });
+      $("sub").append(` · ${d.pizzas.length} pizza · étlap frissítve: ${when}`);
+      readHash(); render();
+    })
+    .catch((e) => { $("results").replaceChildren(el("div", { class: "card empty" }, "Nem sikerült betölteni az étlapot (" + e.message + ").")); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+{
+ "EtteremName": "Randevú Étterem",
+ "WebshopCategories": [
+  {
+   "CategoryData": {
+    "ID": 52129,
+    "Name": "Pizza AKCIÓ",
+    "IsAddon": false,
+    "CIndex": 0
+   },
+   "ProductData": [
+    {
+     "ID": 900001,
+     "CategoryID": 52129,
+     "Name": "Hónap Pizzája-Afrodité",
+     "Note": "Afrodité Pizza: Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt bacon, füstölt sonka, ananász csíkok, mozzarella",
+     "UnitPrice": 3590,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900002,
+     "CategoryID": 52129,
+     "Name": "Dupla Randi™ OKTÓBER (Kali és Hádész)",
+     "Note": "1 db 32cm-es Kali pizza és egy 32cm-es Hádész pizza",
+     "UnitPrice": 5740,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900003,
+     "CategoryID": 52129,
+     "Name": "1+1 Pizza ajánlat",
+     "Note": "Rendelj 2 ugyanolyan pizzát olcsóbban",
+     "UnitPrice": 0,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900004,
+     "CategoryID": 52129,
+     "Name": "Egyszemélyes pizza menü",
+     "Note": "1 db választható pizza, 1 db 0, 25 L XIXO üdítő, 1 db választható szósz",
+     "UnitPrice": 4490,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900005,
+     "CategoryID": 52129,
+     "Name": "Páros pizza menü",
+     "Note": "2 db választható pizza, 1 db 1L Pepsi cola, 2 db választható szósz",
+     "UnitPrice": 8490,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900006,
+     "CategoryID": 52129,
+     "Name": "Családi pizza menü",
+     "Note": "4 db választható pizza, 1 db 2L Pepsi cola, 4 db választható szósz",
+     "UnitPrice": 17490,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900007,
+     "CategoryID": 52129,
+     "Name": "Peroni Pizza ajánlat",
+     "Note": "1 db választható pizza és 1 db Peroni Minőségi Világos Sör 5%",
+     "UnitPrice": 4690,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900008,
+     "CategoryID": 52129,
+     "Name": "Blody Mary",
+     "Note": "Nápolyi jellegű pizza tészta, paradicsomos alap, pikáns szalámi, mozzarella",
+     "UnitPrice": 2990,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900009,
+     "CategoryID": 52129,
+     "Name": "Fekete özvegy",
+     "Note": "Nápolyi jellegű pizza tészta, fokhagymás tejfölös alap, sonka, lilahagyma, mozarrella, fekete olíva bogyó, fekete majonéz",
+     "UnitPrice": 2990,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    }
+   ]
+  },
+  {
+   "CategoryData": {
+    "ID": 50130,
+    "Name": "Pizza Angyal (32cm)",
+    "IsAddon": false,
+    "CIndex": 1
+   },
+   "ProductData": [
+    {
+     "ID": 900010,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #01 Loki Pizza",
+     "Note": "Nápolyi pizza, tejfölös alap, pulled pork, tarja, kaliforniai paprika lilahagyma, mozzarella",
+     "UnitPrice": 4290,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900011,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #02 Hórusz Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, tarja, bacon, chorizo kolbász, lilahagyma, hegyes erőspaprika, mozzarella",
+     "UnitPrice": 4090,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900012,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #03 Odin Pizza",
+     "Note": "Nápolyi pizzatészta, tejfölös-mustáros alap, grillezett csirkemell, bacon, lilahagyma, csemege uborka, mozzarella",
+     "UnitPrice": 4220,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900013,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #04 Ámor Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt sonka, gomba, édes kukorica, mozzarella",
+     "UnitPrice": 4020,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900014,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #05 Fortuna Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomos alap, gomba, kukorica, lilahagyma, kaliforniai paprika, brokkoli, mozzarella",
+     "UnitPrice": 3890,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900015,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #06 Hermész Pizza",
+     "Note": "Nápolyi pizzatészta, tejfölös alap, bacon, lilahagyma, tojás, zöldpaprika, mozzarella",
+     "UnitPrice": 4120,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900016,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #07 Démétér Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, bab, hagyma, bacon, tarja, mozzarella",
+     "UnitPrice": 4220,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900017,
+     "CategoryID": 50130,
+     "Name": "#08 Héliosz Pizza [Hamburger + Pizza Fúzió ]",
+     "Note": "20dkg marhahús, bacon, hagyma, cheddar sajtszósz, paradicsom mártás, Kentucky BBQ fűszersó",
+     "UnitPrice": 4430,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900018,
+     "CategoryID": 50130,
+     "Name": "#09 RandiMix™ Pizza",
+     "Note": "Szabadon választható pizza 5 feltéttel és pizzaszósszal",
+     "UnitPrice": 4420,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900019,
+     "CategoryID": 50130,
+     "Name": "#10 Poszeidón Pizza",
+     "Note": "nápolyi pizzatészta, olasz házi paradicsomszósz, crudo sonka, mozzarella.",
+     "UnitPrice": 3320,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900020,
+     "CategoryID": 50130,
+     "Name": "#11 Hádész Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, pikáns szalámi, bacon, paradicsom, fokhagymás mártás, mozzarella",
+     "UnitPrice": 4020,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900021,
+     "CategoryID": 50130,
+     "Name": "#12 Lucifer Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt tarja, pikáns szalámi, jalapeno, kukorica, lilahagyma, mozzarella, chilis olívaolaj",
+     "UnitPrice": 4220,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900022,
+     "CategoryID": 50130,
+     "Name": "#13 Gabriel Pizza",
+     "Note": "Nápolyi pizzatészta, fokhagymás-bazsalikomos tejfölös mártás, grillezett csirkemellfilé, lilahagyma, édes kukorica, mozzarella",
+     "UnitPrice": 4020,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900023,
+     "CategoryID": 50130,
+     "Name": "#14 Apollo Pizza",
+     "Note": "Nápolyi pizzatészta, tejfölös alap, füstölt sonka, kukorica, mozzarella",
+     "UnitPrice": 3820,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900024,
+     "CategoryID": 50130,
+     "Name": "#15 Afrodité Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt bacon, füstölt sonka, ananász csíkok, mozzarella",
+     "UnitPrice": 3890,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900025,
+     "CategoryID": 50130,
+     "Name": "#16 Héra Pizza",
+     "Note": "Nápolyi pizzatészta, házi bolognai ragu, mozzarella, parmezán, friss bazsalikom",
+     "UnitPrice": 4220,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900026,
+     "CategoryID": 50130,
+     "Name": "#17 Artemisz Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, kemencében sült pulled-pork, lilahagyma, BBQ mártás, mozzarella",
+     "UnitPrice": 4420,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900027,
+     "CategoryID": 50130,
+     "Name": "#18 Zeusz Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, chorizo kolbász, paradicsomkarika, füstölt sonka, pirított gomba, mozzarella",
+     "UnitPrice": 4220,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900028,
+     "CategoryID": 50130,
+     "Name": "#19 Cupido a'la Randevú Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt sonka, bacon, grillezett csirkemell, lilahagyma, füstölt sajt, dupla mozzarella",
+     "UnitPrice": 4520,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900029,
+     "CategoryID": 50130,
+     "Name": "#20 Athéné Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, feta sajt, füstölt gomolya, trappista sajt, mozzarella, friss bazsalikom",
+     "UnitPrice": 3820,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900030,
+     "CategoryID": 50130,
+     "Name": "#21 Pandora Pizza",
+     "Note": "Nápolyi pizzatészta, fokhagymás olasz házi paradicsomszósz, tonhal, olívabogyó, vöröshagyma, mozzarella",
+     "UnitPrice": 4320,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900031,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #22 Ozirisz Pizza",
+     "Note": "Nápolyi pizzatészta, fokhagymás olasz házi paradicsomszósz, füstölt sonka, szalámi, gomba, erős pepperóni, füstölt sajt",
+     "UnitPrice": 3690,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900032,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #23 Síva Pizza",
+     "Note": "Nápolyi pizzatészta, sajtkrémes szósz, grillezett csirkemell, füstölt sonka, szeletelt paradicsom, mozzarella sajt",
+     "UnitPrice": 3790,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900033,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #24 Marduk Pizza",
+     "Note": "Nápolyi pizzatészta, csípős házi paradicsomszósz, pikáns szalámi, darált hagymás sertéshús, mozzarella,",
+     "UnitPrice": 3890,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900034,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #25 Mimir Pizza",
+     "Note": "Nápolyi pizzatészta, tejfölös alap, pirított füstölt szalonna, kolbász, lilahagyma, választható csípős paprika, mozzarella",
+     "UnitPrice": 3790,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900035,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #26 Thor Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, darált hús, csülök, vöröshagyma, mozzarella",
+     "UnitPrice": 4520,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900036,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #28 Frigg Pizza",
+     "Note": "Nápolyi pizzatészta, sajtkrémes szósz, sonka, bacon, két tükörtojás, pepperoni, darált hús, Pick szalámi, mozzarella",
+     "UnitPrice": 3990,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900037,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #29 Mani Pizza",
+     "Note": "Nápolyi pizzatészta, sajtkrémes szósz, csirkemell, bacon, sült hagyma, jalapeno, mozzarella",
+     "UnitPrice": 3720,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900038,
+     "CategoryID": 50130,
+     "Name": "ÚJ!!! #30 Kali Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, sonka, szalámi, kukorica",
+     "UnitPrice": 4020,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900039,
+     "CategoryID": 50130,
+     "Name": "+ feltét",
+     "Note": null,
+     "UnitPrice": 300,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    }
+   ]
+  },
+  {
+   "CategoryData": {
+    "ID": 53415,
+    "Name": "Pizza Angyal (50cm)",
+    "IsAddon": false,
+    "CIndex": 2
+   },
+   "ProductData": [
+    {
+     "ID": 900040,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #01 XXL Poszeidón Pizza",
+     "Note": "nápolyi pizzatészta, olasz házi paradicsomszósz, crudo sonka, mozzarella.",
+     "UnitPrice": 8100,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900041,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #02 XXL Ámor Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt sonka, gomba, édes kukorica, mozzarella",
+     "UnitPrice": 9850,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900042,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #03 XXL Hádész Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, pikáns szalámi, bacon, paradicsom, fokhagymás mártás, mozzarella",
+     "UnitPrice": 9850,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900043,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #04 XXL Lucifer Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt tarja, pikáns szalámi, jalapeno, kukorica, lilahagyma, mozzarella, chilis olívaolaj",
+     "UnitPrice": 10350,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900044,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #05 XXL Apollo Pizza",
+     "Note": "Nápolyi pizzatészta, tejfölös alap, füstölt sonka, kukorica, mozzarella",
+     "UnitPrice": 9350,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900045,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #06 XXL Afrodité Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, füstölt bacon, füstölt sonka, ananász csíkok, mozzarella",
+     "UnitPrice": 9525,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900046,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #07 XXL Zeusz Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, chorizo kolbász, paradicsomkarika, füstölt sonka, pirított gomba, mozzarella",
+     "UnitPrice": 10350,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900047,
+     "CategoryID": 53415,
+     "Name": "ÚJ!!! #08 XXL Kali Pizza",
+     "Note": "Nápolyi pizzatészta, olasz házi paradicsomszósz, sonka, szalámi, kukorica",
+     "UnitPrice": 9850,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    },
+    {
+     "ID": 900048,
+     "CategoryID": 53415,
+     "Name": "+feltét",
+     "Note": null,
+     "UnitPrice": 600,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    }
+   ]
+  },
+  {
+   "CategoryData": {
+    "ID": 54054,
+    "Name": "Randi Trio",
+    "IsAddon": false,
+    "CIndex": 3
+   },
+   "ProductData": [
+    {
+     "ID": 900049,
+     "CategoryID": 54054,
+     "Name": "Randi Trió",
+     "Note": "3 db választható 18 cm-es pizza, 3 db választható szósz, 1db választható 0, 33l-es üdítő",
+     "UnitPrice": 4490,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    }
+   ]
+  },
+  {
+   "CategoryData": {
+    "ID": 42698,
+    "Name": "Levesek",
+    "IsAddon": false,
+    "CIndex": 4
+   },
+   "ProductData": [
+    {
+     "ID": 900050,
+     "CategoryID": 42698,
+     "Name": "Gulyásleves",
+     "Note": "Kockázott marhahús, leveszöldségek, galuska, petrezselyem",
+     "UnitPrice": 2190,
+     "Active": true,
+     "HasImage": false,
+     "ImageId": null,
+     "Allergen": null,
+     "HasAddon": true
+    }
+   ]
+  }
+ ]
+}
