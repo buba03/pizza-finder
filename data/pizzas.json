@@ -1,7 +1,7 @@
 {
- "restaurant": "Randevú Étterem",
+ "restaurant": "Randevú Étterem",
  "orderUrl": "https://randifutar.hu/",
- "updatedAt": "2026-11-21T17:43:36+00:00",
+ "updatedAt": "2026-11-21T17:44:00+00:00",
  "pizzas": [
   {
    "id": "afrodite--a-honap-pizzaja",
@@ -49,7 +49,7 @@
     {
      "cm": null,
      "price": 3590,
-     "productId": 900001
+     "productId": 495480
     }
    ]
   },
@@ -86,7 +86,7 @@
     {
      "cm": null,
      "price": 2990,
-     "productId": 900008
+     "productId": 520449
     }
    ]
   },
@@ -142,7 +142,7 @@
     {
      "cm": null,
      "price": 2990,
-     "productId": 900009
+     "productId": 520450
     }
    ]
   },
@@ -198,7 +198,7 @@
     {
      "cm": 32,
      "price": 4290,
-     "productId": 900010
+     "productId": 506133
     }
    ]
   },
@@ -261,7 +261,7 @@
     {
      "cm": 32,
      "price": 4090,
-     "productId": 900011
+     "productId": 506131
     }
    ]
   },
@@ -317,7 +317,7 @@
     {
      "cm": 32,
      "price": 4220,
-     "productId": 900012
+     "productId": 506132
     }
    ]
   },
@@ -366,12 +366,12 @@
     {
      "cm": 32,
      "price": 4020,
-     "productId": 900013
+     "productId": 506069
     },
     {
      "cm": 50,
      "price": 9850,
-     "productId": 900041
+     "productId": 507606
     }
    ]
   },
@@ -433,7 +433,7 @@
     {
      "cm": 32,
      "price": 3890,
-     "productId": 900014
+     "productId": 506134
     }
    ]
   },
@@ -489,7 +489,7 @@
     {
      "cm": 32,
      "price": 4120,
-     "productId": 900015
+     "productId": 503017
     }
    ]
   },
@@ -543,7 +543,7 @@
     {
      "cm": 32,
      "price": 4220,
-     "productId": 900016
+     "productId": 503018
     }
    ]
   },
@@ -599,7 +599,7 @@
     {
      "cm": 32,
      "price": 4430,
-     "productId": 900017
+     "productId": 494390
     }
    ]
   },
@@ -636,12 +636,12 @@
     {
      "cm": 32,
      "price": 3320,
-     "productId": 900019
+     "productId": 458234
     },
     {
      "cm": 50,
      "price": 8100,
-     "productId": 900040
+     "productId": 507607
     }
    ]
   },
@@ -696,12 +696,12 @@
     {
      "cm": 32,
      "price": 4020,
-     "productId": 900020
+     "productId": 458235
     },
     {
      "cm": 50,
      "price": 9850,
-     "productId": 900042
+     "productId": 507608
     }
    ]
   },
@@ -770,12 +770,12 @@
     {
      "cm": 32,
      "price": 4220,
-     "productId": 900021
+     "productId": 458237
     },
     {
      "cm": 50,
      "price": 10350,
-     "productId": 900043
+     "productId": 507609
     }
    ]
   },
@@ -824,7 +824,7 @@
     {
      "cm": 32,
      "price": 4020,
-     "productId": 900022
+     "productId": 458236
     }
    ]
   },
@@ -867,12 +867,12 @@
     {
      "cm": 32,
      "price": 3820,
-     "productId": 900023
+     "productId": 458238
     },
     {
      "cm": 50,
      "price": 9350,
-     "productId": 900044
+     "productId": 507610
     }
    ]
   },
@@ -922,12 +922,12 @@
     {
      "cm": 32,
      "price": 3890,
-     "productId": 900024
+     "productId": 458239
     },
     {
      "cm": 50,
      "price": 9525,
-     "productId": 900045
+     "productId": 507611
     }
    ]
   },
@@ -970,7 +970,7 @@
     {
      "cm": 32,
      "price": 4220,
-     "productId": 900025
+     "productId": 458240
     }
    ]
   },
@@ -1019,7 +1019,7 @@
     {
      "cm": 32,
      "price": 4420,
-     "productId": 900026
+     "productId": 458241
     }
    ]
   },
@@ -1076,12 +1076,12 @@
     {
      "cm": 32,
      "price": 4220,
-     "productId": 900027
+     "productId": 458242
     },
     {
      "cm": 50,
      "price": 10350,
-     "productId": 900046
+     "productId": 507612
     }
    ]
   },
@@ -1145,7 +1145,7 @@
     {
      "cm": 32,
      "price": 4520,
-     "productId": 900028
+     "productId": 458243
     }
    ]
   },
@@ -1203,7 +1203,7 @@
     {
      "cm": 32,
      "price": 3820,
-     "productId": 900029
+     "productId": 458244
     }
    ]
   },
@@ -1252,7 +1252,7 @@
     {
      "cm": 32,
      "price": 4320,
-     "productId": 900030
+     "productId": 458245
     }
    ]
   },
@@ -1309,7 +1309,7 @@
     {
      "cm": 32,
      "price": 3690,
-     "productId": 900031
+     "productId": 506819
     }
    ]
   },
@@ -1358,7 +1358,7 @@
     {
      "cm": 32,
      "price": 3790,
-     "productId": 900032
+     "productId": 506820
     }
    ]
   },
@@ -1402,7 +1402,7 @@
     {
      "cm": 32,
      "price": 3890,
-     "productId": 900033
+     "productId": 506919
     }
    ]
   },
@@ -1461,7 +1461,7 @@
     {
      "cm": 32,
      "price": 3790,
-     "productId": 900034
+     "productId": 507116
     }
    ]
   },
@@ -1510,7 +1510,7 @@
     {
      "cm": 32,
      "price": 4520,
-     "productId": 900035
+     "productId": 507117
     }
    ]
   },
@@ -1578,7 +1578,7 @@
     {
      "cm": 32,
      "price": 3990,
-     "productId": 900036
+     "productId": 507121
     }
    ]
   },
@@ -1633,7 +1633,7 @@
     {
      "cm": 32,
      "price": 3720,
-     "productId": 900037
+     "productId": 507122
     }
    ]
   },
@@ -1675,12 +1675,12 @@
     {
      "cm": 32,
      "price": 4020,
-     "productId": 900038
+     "productId": 507614
     },
     {
      "cm": 50,
      "price": 9850,
-     "productId": 900047
+     "productId": 507613
     }
    ]
   }
